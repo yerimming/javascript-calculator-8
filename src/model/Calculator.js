@@ -31,7 +31,7 @@ class Calculator {
         numbers.forEach((value) => {
             const num = Number(value);
             if(isNaN(num) || num < 0) {
-                throw new Error("[Error]");
+                throw new Error("[ERROR]");
             }
         });
     }

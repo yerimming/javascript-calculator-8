@@ -9,6 +9,7 @@ class Calculator {
 
         return this.splitNumbers(numbersPart, customSeperator);
     }
+
     getCustomSeperator(input){
         if(!input.startsWith("//")) return null;
         const match = input.match(/^\/\/(.*?)\\n/);
@@ -24,6 +25,15 @@ class Calculator {
 
         const regex = new RegExp(`[${delimiters}]`);
         return numbersPart.split(regex);
+    }
+
+    validateNumbers(numbers) {
+        numbers.forEach((value) => {
+            const num = Number(value);
+            if(isNaN(num) || num < 0) {
+                throw new Error("[Error]");
+            }
+        });
     }
 
 }

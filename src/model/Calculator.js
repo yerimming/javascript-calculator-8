@@ -37,7 +37,7 @@ class Calculator {
     }
 
     sum(numbers) {
-        return numbers.reduce((acc, cur) => acc + Number(cur), 0);
+        return numbers.reduce((sum, value) => sum + Number(value), 0);
     }
 }
 

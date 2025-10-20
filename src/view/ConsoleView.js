@@ -6,7 +6,7 @@ class ConsoleView {
             const input = await Console.readLineAsync("덧셈할 문자열을 입력해 주세요\n");
             return input;
         } catch {
-            throw new Error("[Error]");
+            throw new Error("[ERROR]");
         }
         
     }
@@ -16,7 +16,7 @@ class ConsoleView {
     }
 
     printError(error){
-        Console.print("[Error]" + error.message);
+        Console.print("[ERROR]" + error.message);
     }
 }
 

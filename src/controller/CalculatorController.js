@@ -1,6 +1,5 @@
 import ConsoleView from "../view/ConsoleView.js";
 import Calculator from "../model/Calculator.js";
-import { Console } from "@woowacourse/mission-utils";
 
 class CalculatorController {
     constructor() {
